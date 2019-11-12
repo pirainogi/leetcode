@@ -42,3 +42,14 @@ function toGoatLatin(S) {
   }
   return output.slice(0, -1)
 };
+//
+// const toGoatLatin = s =>
+//     s.split(' ').reduce((acc, cur, idx) => {
+//         if (['a', 'e', 'i', 'o', 'u'].indexOf(cur[0].toLowerCase()) > -1) {
+//             acc += `${cur}ma${'a'.repeat(idx + 1)} `
+//         } else {
+//             acc += `${cur.slice(1)}${cur[0]}ma${'a'.repeat(idx + 1)} `
+//         }
+//
+//         return acc
+//     }, '').trim()
