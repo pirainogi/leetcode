@@ -17,7 +17,7 @@ const threeSumClosest = (nums, target) => {
       if(sum < target) {
         left++
       } else {
-        right++
+        right--
       }
       if(Math.abs(closest - target) > Math.abs(sum - target)) {
         closest = sum

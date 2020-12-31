@@ -6,6 +6,7 @@
 const threeSum = (nums) => {
   nums.sort((a, b) => a - b)
   const result = []
+
   for(let i = 0; i < nums.length; i++) {
     if(i !== 0 && nums[i] === nums[i - 1]) continue
     const seen = new Set()
@@ -26,8 +27,8 @@ const threeSum = (nums) => {
 
 const threeSum = (nums) => {
   nums.sort((a, b) => a - b)
-
   const result = []
+
   for(let indexA = 0; indexA < nums.length - 2; indexA++) {
     const a = nums[indexA]
     if(a > 0) return result

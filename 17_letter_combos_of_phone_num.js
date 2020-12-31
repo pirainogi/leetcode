@@ -30,8 +30,10 @@ const letterCombos = (numStr) => {
       current.pop()
     }
   })()
-  return result 
+  return result
 }
+
+// Big O: O(4^n)
 
 const letterCombos = (numStr) => {
   const alpha = ["", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"]

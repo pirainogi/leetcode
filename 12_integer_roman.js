@@ -20,7 +20,7 @@ const intRoman = (num) => {
   }
 
   let result = ''
-  for (roman in map) {
+  for (key in map) {
     const counter = Math.floor(num / map[key])
     if(counter !== 0) {
       result += key.repeat(counter)
@@ -31,4 +31,4 @@ const intRoman = (num) => {
   return result
 }
 
-//Big O: O(n)
+//Big O: O(1)
