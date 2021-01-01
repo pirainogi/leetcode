@@ -9,22 +9,23 @@
 //   "()()()",
 // ]
 
-const generateParens = (num) => {
-  const result = []
+const generateParenthesis = (n) => {
+    const result = [];
+    generate(result, "", 0, 0, n);
+    return result;
+};
 
-  (function bfs(str, left, right) {
-    if(left === num && right === num){
-      result.push(str)
-      return
-    }
-    if(left !== n) {
-      bfs(str + "(", left+1, right)
-    }
-    if(right !== n) {
-      bfs(str + ")", left, right+1)
-    }
-  })("", 0, 0)
-  return result
-}
+function generate(result, s, open, close, n) {
+  if (open === n && close === n) {
+      result.push(s);
+      return;
+  }
+  if (open < n) {
+      generate(result, s + "(", open + 1, close, n);
+  }
+  if (close < open) {
+      generate(result, s + ")", open, close + 1, n);
+  }
+};
 
-// Big O: O(4^n/√(n))
+// Big O: O(4^n/\sqrt(n))

@@ -33,15 +33,4 @@ const validParens = (str) => {
   return (stack.length === 0)
 }
 
-const validParens = (str) => {
-  return !str.split("").reduce((upToPrev, currChar) => {
-    if(currChat === "(" || currChar === "{" || currChar === "[") {
-      return upToPrev++
-    } else if(currChar === ")" || currChar === "}" || currChar === "]") {
-      return --upToPrev
-    }
-    return upToPrev
-  }, 0)
-}
-
 // Big O: O(n)
