@@ -6,3 +6,23 @@
 
 // Given an integer n, generate the nth sequence.
 // Note: The sequence of integers will be represented as a string.
+
+const countAndSay = (num) => {
+  let seed = '1';
+
+  while (num > 1) {
+    let count = 0;
+    let next = '';
+
+    for (let i = 0; i <= seed.length; i++) {
+      if (i === seed.length || (i > 0 && seed[i] !== seed[i - 1])) {
+        next += count + seed[i - 1]; // Say
+        count = 0;
+      }
+      count++; // Count
+    }
+    seed = next;
+    num--;
+  }
+  return seed;
+};

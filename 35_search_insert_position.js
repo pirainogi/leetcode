@@ -7,3 +7,26 @@
 // [1,3,5,6], 2 → 1
 // [1,3,5,6], 7 → 4
 // [1,3,5,6], 0 → 0
+
+
+const searchInsert = (nums, target) => {
+  let left = 0;
+  let right = nums.length;
+  if(target <= nums[left]) {
+    return left
+  } else if(target >= nums[right - 1]){
+    return right
+  }
+
+  while (left < right) {
+    const middle = Math.floor((left + right) / 2);
+    if (nums[middle] < target) {
+      left = middle + 1;
+    } else {
+      right = middle;
+    }
+  }
+  return left;
+};
+
+// Big O: O(log(n))
