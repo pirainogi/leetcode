@@ -6,3 +6,21 @@
 // Note: You can assume that you can always reach the last index.
 
 // Given array A = [2,3,1,1,4] The minimum number of jumps to reach the last index is 2. (Jump 1 step from index 0 to 1, then 3 steps to the last index.)
+
+const jump2 = (nums) => {
+  const len = nums.length;
+  let step = 0;
+  let now = 0;
+  let max = 0;
+
+  for (let i = 0; i < len - 1; i++) {
+    max = Math.max(max, i + nums[i]);
+    if (i === now) {
+      step++;
+      now = max;
+    }
+  }
+  return step;
+};
+
+// Big O: O(n)
