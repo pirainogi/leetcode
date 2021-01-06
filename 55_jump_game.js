@@ -4,3 +4,17 @@
 
 // For example:
 // A = [2,3,1,1,4], return true. A = [3,2,1,0,4], return false
+
+const canJump = (nums) => {
+  const len = nums.length;
+  let max = 0;
+  for (let i = 0; i < len; i++) {
+    if (i > max) {
+      return false;
+    }
+    max = Math.max(max, i + nums[i]);
+  }
+  return true;
+};
+
+// Big O: O(n)
