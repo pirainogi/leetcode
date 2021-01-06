@@ -8,11 +8,23 @@
 // Input: "Hello World"
 // Output: 5
 
-function lengthOfLastWord(s) {
-    let arr = s.split(" ").filter(String)
-    if(arr.length){
-        return arr[arr.length - 1].length
-    } else {
-      return 0
-    }
-};
+// function lengthOfLastWord(s) {
+//   let arr = s.split(" ").filter(String)
+//   if(arr.length){
+//     return arr[arr.length - 1].length
+//   } else {
+//     return 0
+//   }
+// };
+
+const lengthOfLastWord = function(s) {
+  const str = s.trim();
+  const len = str.length;
+  let i = len - 1;
+  while (i >= 0 && str[i] !== ' ') {
+    i--;
+  }
+  return len - 1 - i;
+}
+
+// Big O: O(n)
