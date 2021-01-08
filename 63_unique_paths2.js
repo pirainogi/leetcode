@@ -11,3 +11,27 @@
 // ]
 
 // The total number of unique paths is 2.
+
+const uniquePathsWithObstacles = function(grid) {
+  const rows = grid.length;
+  const cols = (grid[0] || []).length;
+  const result = Array(rows);
+  let left = 0;
+  let top = 0;
+
+  if (!rows || !cols) {
+    return 0;
+  }
+
+  for (let i = 0; i < rows; i++) {
+    result[i] = Array(cols);
+    for (let j = 0; j < cols; j++) {
+      left = (j === 0 || grid[i][j - 1] === 1) ? 0 : result[i][j - 1];
+      top = (i === 0 || grid[i - 1][j] === 1) ? 0 : result[i - 1][j];
+      result[i][j] = grid[i][j] === 1 ? 0 : ((i === 0 && j === 0) ? 1 : (left + top));
+    }
+  }
+  return result[rows - 1][cols - 1];
+};
+
+// Big O: O(mn)

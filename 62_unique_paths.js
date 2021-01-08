@@ -4,3 +4,15 @@
 
 // How many possible unique paths are there?
 // Note: m and n will be at most 100.
+
+const uniquePaths = (m, n) => {
+  let result = Array(m).fill(1)
+  for(let i = 1; i < m; i++) {
+    for(let j = 1; j < n; j++) {
+      result[j] += result[j-1]
+    }
+  }
+  return result[n-1]
+}
+
+// Big O: O(mn)
