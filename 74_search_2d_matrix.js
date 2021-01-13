@@ -10,3 +10,26 @@
 //   [23, 30, 34, 50]
 // ]
 // given target = 3, return true.
+
+const searchMatrix = (matrix, target) => {
+  const n = matrix.length;
+  const m = (matrix[0] || []).length;
+  let left = 0;
+  let right = (n * m) - 1;
+  let mid = 0;
+  let temp = 0;
+  while (left <= right) {
+    mid = left + Math.floor((right - left) / 2);
+    temp = matrix[Math.floor(mid / m)][mid % m];
+    if (temp === target) {
+      return true;
+    } else if (temp > target) {
+      right = mid - 1;
+    } else {
+      left = mid + 1;
+    }
+  }
+  return false;
+};
+
+// Big O: O(log(mn))
