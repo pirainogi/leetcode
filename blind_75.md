@@ -1,4 +1,4 @@
-##Array
+## Array
 * 1. Two Sum (E)
 * 121. Best Time to Buy and Sell Stock (E)
 * 217. Contains Duplicate (E)
@@ -10,14 +10,14 @@
 * 15. Threesum (M)
 * 11. Container with Most Water (M)
 
-##Binary
+## Binary
 * 371. Sum of Two Integers (M)
 * 191. Number of 1 Bits (E)
 * 338. Counting Bits (M)
 * 268. Missing Number (E)
 * 190. Reverse Bits (E)
 
-##Dynamic Programming
+## Dynamic Programming
 * 70. Climbing Stairs (E)
 * 322. Coin Change (M)
 * 300. Longest Increasing Subsequence (M)
@@ -29,7 +29,7 @@
 * 62. Unique Paths (M)
 * 55. Jump Game (M)
 
-##Graph
+## Graph
 * 133. Clone Graph (M)
 * 207. Course Schedule (M)
 * 417. Pacific Atlantic Water Flow (M)
@@ -39,14 +39,14 @@
 * 261. Graph Tree Valid (premium) (M)
 * 323. Number of Connected Components in an Undirected Graph (premium) (M)
 
-##Interval
+## Interval
 * 57. Insert Interval (M)
 * 56. Merge Intervals (M)
 * 435. Non-overlapping Intervals (M)
 * 252. Meeting Rooms (premium) (E)
 * 253. Meeting Rooms II (premium) (M)
 
-##Linked List
+## Linked List
 * 206. Reverse a Linked List (E)
 * 141. Detect Cycle in a Linked List (E)
 * 21. Merge Two Sorted Lists (E)
@@ -60,7 +60,7 @@
 * 48. Rotate Image (M)
 * 79. Word Search (M)
 
-##String
+## String
 * 3. Longest Substring Without Repeating Characters (M)
 * 424. Longest Repeating Character Replacement (M)
 * 76. Minimum Window Substring (H)
@@ -72,7 +72,7 @@
 * 647. Palindromic Substrings (M)
 * 271. Encode/Decode Strings (premium) (M)
 
-##Tree
+## Tree
 * 111. Maximum Depth of Binary Tree (E)
 * 100. Same Tree (E)
 * 226. Invert/Flip Binary Tree (E)
@@ -88,7 +88,7 @@
 * 211. Design Add and Search Word DS (M)
 * 212. Word Search II (H)
 
-##Heap
+## Heap
 * 23. Merge K Sorted Lists (H)
 * 347. Top K Frequent Elements (M)
 * 295. Find Median from Data Stream (H)
