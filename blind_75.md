@@ -1,5 +1,5 @@
 ## Array
-1. Two Sum (E)
+1. [Two Sum](https://github.com/pirainogi/leetcode/blob/master/0_easy/1_two_sum.js) (E)
 121. Best Time to Buy and Sell Stock (E)
 217. Contains Duplicate (E)
 238. Product of Array Except Self (M)
