@@ -33,6 +33,8 @@ const longestSubstring = (str) => {
   return maxLength 
 }
 
+// Big O: O(n)
+
 const lengthOfLongestSubstring = function(s) {
   let set = new Set();
   let left = 0, right = 0, maxLength = 0;
