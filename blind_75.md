@@ -73,7 +73,7 @@
 271. Encode/Decode Strings (premium) (M)
 
 ## Tree
-111. Maximum Depth of Binary Tree (E)
+111. Minimum Depth of Binary Tree (E)
 100. Same Tree (E)
 226. Invert/Flip Binary Tree (E)
 124. Binary Tree Maximum Path Sum (H)
