@@ -1,5 +1,5 @@
 ## Array
-1. [Two Sum](https://github.com/pirainogi/leetcode/blob/master/0_easy/1_two_sum.js) (E)
+1. Two Sum (E)
 121. Best Time to Buy and Sell Stock (E)
 217. Contains Duplicate (E)
 238. Product of Array Except Self (M)
@@ -54,7 +54,7 @@
 19. Remove Nth Node from End of List (M)
 143. Reorder List (M)
 
-##Matrix
+## Matrix
 73. Set Matrix Zeroes (M)
 54. Spiral Matrix (M)
 48. Rotate Image (M)

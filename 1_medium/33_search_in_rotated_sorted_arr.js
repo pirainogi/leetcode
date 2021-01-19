@@ -7,7 +7,7 @@
 // You may assume no duplicate exists in the array.
 
 const search = (nums, target) => {
-  if(nums.length == 0 || nums == null) return -1;
+  if(nums.length === 0 || nums === null) return -1;
   let left = 0;
   let right = nums.length-1;
 
@@ -32,7 +32,7 @@ const search = (nums, target) => {
 
   while(left <= right){
     let mid = Math.floor((left+right)/2);
-    if(nums[mid] == target) {
+    if(nums[mid] === target) {
       return mid;
     }
     if(nums[mid] < target) {
