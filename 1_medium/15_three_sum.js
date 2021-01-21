@@ -11,7 +11,7 @@ const threeSum = (nums) => {
     if(i !== 0 && nums[i] === nums[i - 1]) continue
     const seen = new Set()
     for(let j = i + 1; j < nums.length; j++) {
-      if(seen.has(-nums[1] - nums[j])) {
+      if(seen.has(-nums[i] - nums[j])) {
         result.push([nums[i], nums[j], -nums[i] - nums[j]])
         while(nums[j + 1] === nums[j] && j + 1 < nums.length) {
           j ++

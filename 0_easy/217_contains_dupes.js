@@ -12,7 +12,9 @@
 // Input: [1,1,1,3,3,4,3,2,4,2]
 // Output: true
 
-var containsDuplicate = function(nums) {
-    let uniq = new Set(nums)
-    return nums.length !== [...uniq].length
+const containsDuplicate = function(nums) {
+  let uniq = new Set(nums)
+  return nums.length !== [...uniq].length
 };
+
+// Big O: O(n)

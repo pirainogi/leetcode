@@ -13,15 +13,17 @@
 // Output: 0
 // Explanation: In this case, no transaction is done, i.e. max profit = 0.
 
-var maxProfit = function(prices) {
-    let buy = Number.MAX_VALUE
-    let sell = 0
-    for (const price of prices) {
-        if (price < buy) {
-            buy = price
-        } else {
-            sell = Math.max(sell, price - buy)
-        }
+const maxProfit = function(prices) {
+  let buy = Number.MAX_VALUE
+  let sell = 0
+  for (const price of prices) {
+    if (price < buy) {
+      buy = price
+    } else {
+      sell = Math.max(sell, price - buy)
     }
-    return sell
+  }
+  return sell
 };
+
+// Big O: O(n)
