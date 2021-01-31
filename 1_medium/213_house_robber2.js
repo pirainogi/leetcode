@@ -26,7 +26,7 @@ const rob = (nums) => {
     temp[0] = nums[0];
     temp[1] = Math.max(nums[1], nums[0]);
 
-    for(let i = 2; i < l; i++){
+    for(let i = 2; i < len; i++){
         temp[i] = Math.max(nums[i] + temp[i-2], temp[i-1]);
     }
     return temp[len - 1];

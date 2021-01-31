@@ -16,3 +16,16 @@ const reverse = (num) => {
   }
   return (num < 0 ? - 1 : 1) * +rev
 }
+
+const reverse = (num) => {
+  let rev = 0
+  let absNum = Math.abs(num)
+  while(absNum > 0){
+    rev = (rev * 10) + (absNum % 10)
+    absNum = Math.floor(absNum / 10)
+  }
+  if (rev > Math.pow(2, 31) - 1) {
+    return 0
+  }
+  return (num < 0 ? -1 : 1) * rev
+}
